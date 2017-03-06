@@ -1,0 +1,53 @@
+Level 0: Tutorial
+-----------------
+
+This is the first guided level.
+
+> c
+   [    console awaiting input    ]
+   [ automatically set breakpoint ]
+   [     press c to continue.     ]
+> c
+CPUOFF flag set; program no longer running. CPU must now be reset.
+> reset
+> break main
+> c
+> s
+> step 5a
+> continue
+   [    console awaiting input    ]
+   [ automatically set breakpoint ]
+   [     press c to continue.     ]
+> out
+> f
+> out
+> break check_password
+> c
+> s
+> s
+> s
+> s
+> s
+> break 448e
+> unbreak check_password
+> c
+> unbreak 448e
+> s
+> s
+> let pc=4498
+> f
+> step
+> s
+> c
+Door Unlocked.
+> reset
+> c
+   [    console awaiting input    ]
+   [ automatically set breakpoint ]
+   [     press c to continue.     ]
+> c
+Door Unlocked.
+
+It's basically checked if the password is 8 characters long, so "password is a valid flag:
+
+Solution/Flag: Password
